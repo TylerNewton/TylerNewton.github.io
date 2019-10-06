@@ -1,1 +1,42 @@
-Hello World!
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body, html {
+                height:100%;
+            }
+
+            .parallax1, .parallax2, .parallax3 {
+                /* Set the height of the background images */
+                height: 100%;
+
+                /* Create the parallax effect */
+                background-attachment: fixed;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .parallax1 {
+                background-image: url('resources/background1.jpg'); 
+            }
+            .parallax2 {
+                background-image: url('resources/background2.jpg');   
+            }
+            .parallax3 {
+                background-image: url('resources/background3.jpg');
+            }
+            .separator {
+                background-color: powderblue;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parallax1"></div>
+        <div class="separator"></div>
+        <div class="parallax2"></div>
+        <div class="separator"></div>
+        <div class="parallax3"></div>
+    </body>
+</html>
